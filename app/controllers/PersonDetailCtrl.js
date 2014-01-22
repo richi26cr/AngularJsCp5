@@ -15,6 +15,10 @@ personApp.controller('PersonDetailCtrl',['$scope', '$routeParams', '$http',
 
         $scope.setImage = function(imageUrl) {
             $scope.imageClicked = imageUrl;
+        };
+
+        $scope.increment = function(val) {
+            $scope.val = val+1;
         }
     }
 ]);
